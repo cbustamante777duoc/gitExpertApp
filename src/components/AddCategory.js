@@ -37,6 +37,7 @@ export const AddCategory = ({setcategories}) => {
     )
 }
 
+//validacion requerida
 AddCategory.propTypes = {
     setcategories : PropTypes.func.isRequired
 
