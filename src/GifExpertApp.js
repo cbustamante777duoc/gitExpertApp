@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { AddCategory } from './components/AddCategory';
 
 export default function GifExpertApp() {
 
@@ -8,15 +9,16 @@ export default function GifExpertApp() {
  
   //al ser apretado el boton agregar copia el arreglo con sus referencia ...categorie y agrega el 
   //nuevo elemento = 'Jennie'
-  const handleAdd = () =>{
+  /*const handleAdd = () =>{
      setcategories([...categories,'Jennie']);
-  }
+  }*/
    
     return (
         <div>
             <h2>GifExpertApp</h2>
+            <AddCategory setcategories={setcategories} />
             <hr></hr>
-            <button onClick={handleAdd}>Agregar</button>
+            
             <ol>
                 {
                     //recorre el arreglo y lo iterra en cada ciclo 
