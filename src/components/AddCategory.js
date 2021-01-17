@@ -16,7 +16,7 @@ export const AddCategory = ({setcategories}) => {
         //la validacion para evitar input vacios
        if (inputValue.trim().length>2) {
            //agrega el nuevo valor al arreglo de categories
-           setcategories(cats =>[...cats,inputValue]);
+           setcategories(cats =>[inputValue,...cats]);
            setinputValue('');
        }
     }
